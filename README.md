@@ -6,7 +6,7 @@ Githib pages: https://victoriqueliutenko.github.io/eltex-test/dist/
 
 Git clone:
 ```bash
-git clone ...
+git clone git@github.com:VictoriqueLiutenko/eltex-test.git
 ```
 
 Build:
