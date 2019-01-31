@@ -1,0 +1,45 @@
+@import "./colors.scss";
+
+.photos {
+  padding-top: 56px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.photosTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: $color-mainText;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.photosContainer {
+  display: grid;
+  place-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". i1 i2 i3"
+    "i5 i4 i4 i3"
+    "i5 i6 i7 .";
+  justify-items: stretch;
+  align-items: stretch;
+  &::before {
+    content: "";
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+  @media screen and (max-width: 1000px) {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

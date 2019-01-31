@@ -1,0 +1,9 @@
+.subscriptions {
+  margin: 73px auto;
+  width: 62%;
+  display: flex;
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}

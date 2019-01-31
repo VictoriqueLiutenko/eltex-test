@@ -1,0 +1,142 @@
+@import "./colors.scss";
+
+.feature {
+  width: 250px;
+  margin: 0 6px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.feature--padding {
+  padding-left: 14px;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 0px;
+  }
+}
+.feature-icon {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 0 30%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+}
+.feature-icon--halfWidth {
+  margin: 30px 0;
+  @media screen and (max-width: 800px) {
+    width: 50px;
+  }
+}
+.feature-icon--letter {
+  background-image: url("./images/icon-letter.png");
+}
+.feature-icon--pencil {
+  background-image: url("./images/icon-pencil.png");
+}
+.feature-icon--card {
+  background-image: url("./images/icon-card.png");
+}
+.feature-icon--gouge {
+  background-image: url("./images/icon-gouge.png");
+}
+.feature-icon--chat {
+  background-image: url("./images/icon-chat.png");
+}
+.feature-icon--phone {
+  background-image: url("./images/icon-phone.png");
+}
+.feature-icon--adjustments {
+  background-image: url("./images/icon-adjustments.png");
+}
+.feature-icon--cart {
+  background-image: url("./images/icon-cart.png");
+}
+.feature-icon--chart {
+  background-image: url("./images/icon-chart.png");
+}
+.feature-icon--browser {
+  background-image: url("./images/icon-browser.png");
+}
+.feature-icon--briefcase {
+  background-image: url("./images/icon-briefcase.png");
+}
+.feature-text--halfWidth {
+  width: 73%;
+  padding-left: 13px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 0;
+  }
+  .feature-header {
+    text-transform: none;
+    font-size: 0.85rem;
+    margin: 20px 0 0 0;
+  }
+  .feature-description {
+    text-align: left;
+    margin: 0 23px 0 0;
+    word-break: unset;
+    hyphens: none;
+    @media screen and (max-width: 800px) {
+      padding: 0;
+    }
+  }
+}
+.feature-header {
+  color: $color-mainText;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 18px 0;
+  line-height: 1.1rem;
+
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+}
+.feature-description {
+  color: $color-lightText;
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0 20px;
+
+  @media screen and (max-width: 800px) {
+    padding: 0 30%;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
+}
+.feature-button {
+  font-size: 0.65rem;
+  background-color: transparent;
+  border: none;
+  color: $color-mainText;
+  text-transform: uppercase;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.feature-badge {
+  background-color: $color-brand;
+  color: $color-invertedText;
+  text-transform: uppercase;
+  padding: 1px 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 0.1rem;
+}

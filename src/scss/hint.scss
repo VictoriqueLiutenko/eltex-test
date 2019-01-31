@@ -1,0 +1,32 @@
+@import "./colors.scss";
+
+.hint {
+  font-family: "Montserrat", sans-serif;
+  color: $color-mainText;
+  text-align: center;
+  padding: 37px 0 88px;
+  background-color: $color-ligthBg;
+}
+.hint--differentPadding {
+  padding: 10px 0 30px;
+  margin-top: 76px;
+}
+.hint-title {
+  font-family: "Montserrat", sans-serif;
+  color: $color-mainText;
+  font-size: 3.6rem;
+  font-weight: 100;
+  margin-bottom: 33px;
+}
+.hint-text {
+  color: $color-mainText;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: -0.01rem;
+  width: 30%;
+  margin: auto;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
+}

@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+.citation {
+  background-color: $color-ligthBg;
+  font-family: "Montserrat", sans-serif;
+  color: $color-mainText;
+  text-align: center;
+  width: 50%;
+  min-width: 50%;
+  margin: 0 9px;
+  height: 308px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+.citation-openingQuote {
+  width: 100%;
+  height: 60px;
+  background-position: 5% 75%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-image: url("./images/icon-openingQuote.png");
+}
+.citation-closingQuote {
+  width: 100%;
+  height: 50px;
+  background-position: 94% 0%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-image: url("./images/icon-closingQuote.png");
+}
+.citation-content {
+  font-family: "Montserrat", sans-serif;
+  color: $color-mainText;
+  font-size: 2.1rem;
+  font-weight: 100;
+  line-height: 2.6rem;
+  margin: 0 35px;
+}
+.citation-author {
+  color: $color-mainText;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.2rem;
+  letter-spacing: 0.02rem;
+  margin: 15px 0 0;
+}

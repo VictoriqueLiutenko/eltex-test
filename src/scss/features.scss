@@ -1,0 +1,33 @@
+@import "./colors.scss";
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 97px;
+  width: 80%;
+}
+.features--smallMarginBottom {
+  margin-bottom: 38px;
+}
+.features-descriprion {
+  color: $color-mainText;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 100%;
+  margin-top: 37px;
+}
+.features-descriprionTitle {
+  font-size: 0.6rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+}
+.features-descriprionText {
+  font-size: 0.85rem;
+  letter-spacing: 0.01rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin: 30px auto;
+  width: 65%;
+}

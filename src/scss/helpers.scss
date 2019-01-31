@@ -1,0 +1,23 @@
+@import "./colors.scss";
+
+body {
+  margin: 0;
+  background-color: $color-mainBg;
+  overflow-x: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  &:focus {
+    outline: none;
+  }
+}

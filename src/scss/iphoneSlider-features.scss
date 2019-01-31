@@ -1,0 +1,72 @@
+@import "./colors.scss";
+.iphoneSlider-features {
+  position: absolute;
+  background-color: $color-ligthBg;
+  right: 15%;
+  top: 13%;
+  padding-top: 10px;
+  .feature {
+    padding: 0 21px 10px 12px;
+    margin: 0 13px;
+  }
+  .feature-text--halfWidth {
+    margin: 9px 0 -2px 4px;
+    text-align: left;
+  }
+  .feature-header {
+    margin: 24px 0 16px 0;
+    min-height: auto;
+  }
+  .feature-description {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .features-button {
+    background-color: $color-darkBg;
+    color: $color-invertedText;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1000px) {
+    right: 0%;
+    top: 0%;
+    .feature {
+      padding: 0;
+      margin: 0 5px;
+    }
+    .feature-text--halfWidth {
+      margin: 0;
+    }
+    .features-button {
+      margin: 11px 0 0;
+      padding: 12px;
+    }
+    .feature-icon--halfWidth {
+      margin: 26px 0 0;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .feature {
+      width: 250px;
+      margin-bottom: 0;
+    }
+    .feature-icon {
+      width: 50px;
+    }
+    .feature-description {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    right: 0;
+    top: 47%;
+    width: 100%;
+  }
+  @media screen and (max-width: 400px) {
+    top: 30%;
+  }
+}

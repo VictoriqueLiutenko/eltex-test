@@ -1,0 +1,169 @@
+@import "./colors.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css";
+$ease_out: cubic-bezier(0.23, 1, 0.32, 1);
+
+.iphoneSlider {
+  height: 720px;
+  position: relative;
+  background-color: $color-brand;
+
+  @media screen and (max-width: 1000px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 500px) {
+    height: 850px;
+  }
+  @media screen and (max-width: 400px) {
+    height: 580px;
+  }
+}
+.iphoneSlider-phoneWrapper {
+  position: absolute;
+  top: 52%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  @media screen and (min-width: 1000px) {
+    width: 760px;
+    &:before {
+      left: 19%;
+      bottom: 24%;
+      width: 62px;
+    }
+    &:after {
+      width: 62px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    width: 460px;
+    top: 24%;
+    left: 50%;
+  }
+  @media screen and (max-width: 400px) {
+    width: 200px;
+    top: 16%;
+  }
+}
+.iphoneSlider-arrow {
+  background-image: url("./images/icon-iphoneSliderArrow--active.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 54px;
+  width: 63px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.4s linear;
+  &:hover {
+    opacity: 1;
+  }
+  &:focus {
+    outline: none;
+  }
+  @media screen and (max-width: 1000px) {
+    height: 39px;
+    width: 45px;
+  }
+}
+.iphoneSlider-arrow--prev {
+  bottom: 26%;
+  left: 19%;
+  @media screen and (max-width: 1000px) {
+    bottom: 27%;
+    left: 18%;
+  }
+  @media screen and (max-width: 400px) {
+    bottom: 12%;
+    left: -3%;
+  }
+}
+.iphoneSlider-arrow--next {
+  transform: rotate(180deg);
+  bottom: 72%;
+  right: 26%;
+  @media screen and (max-width: 1000px) {
+    bottom: 68%;
+    right: 23%;
+  }
+  @media screen and (max-width: 400px) {
+    bottom: 71%;
+    right: 4%;
+  }
+}
+.iphoneSlider-image {
+  width: 100%;
+}
+.iphoneSlider-phone {
+  position: absolute;
+  width: 170px;
+  height: 335px;
+  bottom: 38px;
+  left: -26px;
+  overflow: hidden;
+  transform: rotate(-37.73deg) scaleX(0.8312) scaleY(0.801) skewX(10.92deg)
+    skewY(1deg) translate(91px, 120px);
+  cursor: pointer;
+  border-radius: 2px;
+  @media screen and (min-width: 1000px) {
+    width: 320px;
+    height: 635px;
+    bottom: 67px;
+    left: -90px;
+    transform: rotate(-37.73deg) scaleX(0.8312) scaleY(0.801) skewX(10.92deg)
+      skewY(1deg) translate(205px, 258px);
+  }
+  @media screen and (max-width: 500px) {
+    width: 200px;
+    height: 380px;
+    bottom: 40px;
+    left: -11px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 84px;
+    height: 167px;
+    bottom: 30px;
+    left: -81px;
+  }
+}
+.iphoneSlider-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  transition: opacity 0.4s linear;
+  &:hover {
+    opacity: 1;
+  }
+}
+.iphoneSlider-slide {
+  transform: scale(1.15) translateZ(0);
+  transition: transform 0.65s $ease_out, opacity 0.4s 0.4s linear;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.iphoneSlider-slide--elephant {
+  background-image: url("./images/icon-iphoneElephant.png");
+}
+.iphoneSlider-slide--turtle {
+  background-image: url("./images/icon-iphoneTurtle.png");
+}
+.iphoneSlider-slide--kangaroo {
+  background-image: url("./images/icon-iphoneKangaroo.png");
+}
+
+.slick-list,
+.slick-track,
+.slick-slide > div,
+.iphoneSlider-slide {
+  height: 100%;
+  position: relative;
+}
+.slick-current {
+  opacity: 1;
+  transform: scale(1) translateZ(0);
+  transition: transform 0.65s $ease_out, opacity 0.4s linear;
+}
