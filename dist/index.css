@@ -1728,6 +1728,16 @@ input:focus {
     align-items: center;
   }
 }
+.skrollWatch {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.skrollWatch.scroll-watch-in-view {
+  opacity: 1;
+}
 .subscription {
   font-family: Montserrat,sans-serif;
   display: -webkit-box;

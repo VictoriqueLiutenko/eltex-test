@@ -1,0 +1,7 @@
+.skrollWatch {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.skrollWatch.scroll-watch-in-view {
+  opacity: 1;
+}

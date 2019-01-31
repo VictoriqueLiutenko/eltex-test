@@ -21,6 +21,7 @@
     "imagemin-pngquant": "^7.0.0",
     "jquery": "^3.3.1",
     "parallel": "^1.2.0",
+    "scrollwatch": "^2.0.1",
     "slick-carousel": "^1.8.1"
   }
 }
