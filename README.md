@@ -8,6 +8,10 @@ Git clone:
 ```bash
 git clone git@github.com:VictoriqueLiutenko/eltex-test.git
 ```
+Install dependencies:
+```bash
+npm i
+```
 
 Build:
 ```bash
