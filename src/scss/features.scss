@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .features {
   display: flex;
@@ -13,7 +14,7 @@
 }
 .features-descriprion {
   color: $color-mainText;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   text-align: center;
   width: 100%;
   margin-top: 37px;

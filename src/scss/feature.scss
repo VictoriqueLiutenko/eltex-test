@@ -1,16 +1,15 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .feature {
   width: 250px;
   margin: 0 6px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   text-align: center;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-
   @media screen and (max-width: 800px) {
     width: 100%;
     margin-bottom: 50px;
@@ -101,7 +100,6 @@
   text-transform: uppercase;
   margin: 18px 0;
   line-height: 1.1rem;
-
   min-height: 35px;
   display: flex;
   align-items: center;
@@ -114,7 +112,6 @@
   word-break: break-word;
   hyphens: auto;
   margin: 0 20px;
-
   @media screen and (max-width: 800px) {
     padding: 0 30%;
   }

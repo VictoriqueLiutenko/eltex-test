@@ -1,8 +1,9 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .citation {
   background-color: $color-ligthBg;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   color: $color-mainText;
   text-align: center;
   width: 50%;
@@ -36,7 +37,7 @@
   background-image: url("./images/icon-closingQuote.png");
 }
 .citation-content {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   color: $color-mainText;
   font-size: 2.1rem;
   font-weight: 100;

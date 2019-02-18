@@ -16,13 +16,13 @@ function css() {
   return gulp
     .src("./src/scss/*.scss")
     .pipe(sass())
-    .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(
       autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], {
         cascade: true
       })
     )
     .pipe(concatCss("index.css"))
+    .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("./dist"));
 }
 

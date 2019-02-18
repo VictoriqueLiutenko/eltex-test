@@ -1,16 +1,15 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .header {
   background-image: url("./images/image-headerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   width: 60%;
   height: 53vw;
   padding: 38px 20% 0;
   margin-bottom: -1vw;
-
   @media screen and (max-width: 1000px) {
     width: 92%;
     padding: 38px 4% 0;
@@ -27,14 +26,12 @@
   justify-content: space-between;
 }
 .header-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   text-transform: uppercase;
   color: $color-mainText;
-
   width: 330px;
   padding: 15% 0;
   margin-left: -6px;
-
   @media screen and (max-width: 1000px) {
     padding: 7% 0;
     margin-left: 10%;
@@ -47,7 +44,6 @@
     width: 90%;
     margin: 0;
   }
-
   > h1 {
     font-size: 4.6vw;
     font-weight: 100;
@@ -102,21 +98,20 @@
   display: flex;
   padding-top: 6px;
 }
-.heaher-menuItem {
+.header-menuItem {
   padding-right: 23px;
 }
-.heaher-menuItemLink {
-  font-family: "Montserrat", sans-serif;
+.header-menuItemLink {
+  font-family: $font-montserrat;
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
   color: $color-lightText;
 }
-.heaher-menuItemLink--active,
-.heaher-menuItemLink:hover {
+.header-menuItemLink--active,
+.header-menuItemLink:hover {
   color: $color-mainText;
 }
-
 .header-menuOnHover {
   display: none;
   width: 0;
@@ -126,7 +121,7 @@
 .header-menuOnHoverItem {
   min-width: 140px;
 }
-.heaher-menuItem:hover {
+.header-menuItem:hover {
   > .header-menuOnHover {
     display: block;
   }
@@ -194,15 +189,12 @@
   color: $color-invertedText;
   border: none;
   border-radius: 1px;
-
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   font-size: 0.5rem;
   font-weight: 500;
   letter-spacing: 0.055rem;
   text-transform: uppercase;
-
   padding: 11px 15px;
   margin-right: 26px;
-
   cursor: pointer;
 }

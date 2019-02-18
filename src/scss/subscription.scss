@@ -1,7 +1,8 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .subscription {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

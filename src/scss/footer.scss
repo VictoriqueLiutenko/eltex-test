@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .footer-bgCoverHelper {
   width: 60%;
@@ -13,14 +14,13 @@
   background-size: cover;
   position: absolute;
   z-index: 1;
-
   @media screen and (max-width: 1000px) {
     width: 92%;
     padding: 0 4%;
   }
 }
 .footer-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   text-transform: uppercase;
   color: $color-mainText;
   font-size: 5.6vw;
@@ -30,7 +30,6 @@
   text-align: right;
   position: relative;
   bottom: -100%;
-
   @media screen and (max-width: 1170px) {
     padding: 0 !important;
     width: 80% !important;
@@ -94,7 +93,7 @@
   height: 100%;
 }
 .footer-menuItem {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -128,7 +127,7 @@
   }
 }
 .footer-copyrightsTitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;

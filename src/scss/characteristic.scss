@@ -1,9 +1,10 @@
 @import "./colors.scss";
+@import "./fonts.scss";
 
 .characteristic {
   width: 170px;
   margin: 0 60px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-montserrat;
 
   display: flex;
   flex-wrap: wrap;
